@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Game - Futbol Oyini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚽ FUTBOL OYINI</h1>
+            <div class="stats">
+                <div class="score">
+                    <span>Sizning Jamoasi:</span>
+                    <span id="playerScore" class="score-value">0</span>
+                </div>
+                <div class="score">
+                    <span>Kompyuter:</span>
+                    <span id="computerScore" class="score-value">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+        </div>
+
+        <div class="controls">
+            <p class="instruction">⬆️ ⬇️ O'NG ARROW - Qadam yugurib o'tish</p>
+            <p class="instruction">SPACE - Sharni uloq urish</p>
+            <button id="startBtn" class="btn">🎮 OYINNI BOSHLASH</button>
+            <button id="resetBtn" class="btn reset-btn">🔄 QAYTA BOSHLASH</button>
+        </div>
+
+        <div class="info">
+            <p>Sharni kompyuter qo'lidan olib, gol qiling! 🎯</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
